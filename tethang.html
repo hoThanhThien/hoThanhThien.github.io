@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://199z.net/asset/image/gif/118.gif" type="image/x-icon" />
     <style>
+        h2{
+            color: red;
+            font-size: 50px;
+        }
+    </style>
+    <style>
         body {
            
             background-image: url(https://mekoong.com/wp-content/uploads/2022/12/background-tet-2023-20-1.jpg);
@@ -121,14 +127,14 @@
             animation: multiBlink 1s infinite;
         }
     </style>
-    <title>Quà Lì Xì Cho <?php echo $name ?></title>
+    <title>Quà Lì Xì Cho Hằng </title>
 </head>
 
 <body>
 
     <div class="container">
         <div class="greeting" id="main">
-            <h1>Chào bạn <span id="name"><?php echo $name ?></span>, đến năm mới rồi.<br> <?php echo $name ?> có muốn nhận lì xì không?</h1>
+            <h1>Chào bạn  <span id="name"><?php echo $name ?></span>, đến năm mới rồi.<br> <?php echo $name ?> có muốn nhận lì xì không?</h1>
            
             <div class="buttons">
                 <div>
@@ -154,8 +160,8 @@
         document.getElementById('yesBtn').addEventListener('click', function () {
             moveButtonRandomly(this);
         });
-        document.getElementById('noBtn').addEventListener('click', function () {
-            document.getElementById('main').innerHTML = "<br><br><br>Dù rất muốn lì xì, nhưng ép nhiều quá thì ngượng ngùng đôi bên.<br><br>Nhân dịp năm mới, Chúc <?php echo $name ?> cùng gia đình nhiều sức khỏe, gặp may mắn trong cuộc sống, và thuận lợi trong công việc. <h2>CHÚC MỪNG NĂM MỚI</h2>";
+        document.getElementById('noBtn').addEventListener('click', function () { 
+            document.getElementById('main').innerHTML = "<br><br><br>Dù rất muốn lì xì, nhưng ép nhiều quá thì ngượng ngùng đôi bên.<br><br>Nhân dịp năm mới, Chúc hằng (= cùng gia đình nhiều sức khỏe, gặp may mắn trong cuộc sống, và thuận lợi trong công việc. <h2>CHÚC MỪNG NĂM MỚI</h2>";
         });
 
         function moveButtonRandomly(button) {
